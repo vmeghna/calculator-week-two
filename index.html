@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator-week-two</title>
+    <!--normalize css-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--customize css-->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  </head>
+  <body>
+    <!--start-->
+    <div class="main">
+      <div class="inputs">
+        <input id="display" class="input" readonly />
+      </div>
+      <div class="operators">
+        <button class="add" onclick="buttonClick('+')">+</button>
+        <!--sub-->
+        <button class="sub" onclick="buttonClick('-')">-</button>
+        <!--multiply-->
+        <button class="multiply" onclick="buttonClick('*')">&times;</button>
+        <!--division-->
+        <button class="division" onclick="buttonClick('/')">&divide;</button>
+      </div>
+      <!--numbers-->
+      <div class="left ctn">
+        <div class="numbers">
+          <button class="one" onclick="buttonClick('7')">7</button>
+          <!--2-->
+          <button class="two" onclick="buttonClick('8')">8</button>
+          <!--3-->
+          <button class="three" onclick="buttonClick('9')">9</button>
+        </div>
+        <!--4-->
+        <div class="numbers">
+          <button class="four" onclick="buttonClick('4')">4</button>
+          <!--5-->
+          <button class="five" onclick="buttonClick('5')">5</button>
+          <!--6-->
+          <button class="six" onclick="buttonClick('6')">6</button>
+        </div>
+        <!--7-->
+        <div class="numbers">
+          <button class="seven" onclick="buttonClick('1')">1</button>
+          <!--8-->
+          <button class="eight" onclick="buttonClick('2')">2</button>
+          <!--9-->
+          <button class="nine" onclick="buttonClick('3')">3</button>
+        </div>
+        <!--0-->
+        <div class="numbers">
+          <button class="zero" onclick="buttonClick('0')">0</button>
+          <!--.-->
+          <button class="dot" onclick="buttonClick('.')" value=".">.</button>
+          <!--c-->
+          <button class="clear" onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+      <div class="right-ctn">
+        <button class="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
